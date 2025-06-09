@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodTech2 - Online Learning Platform</title>
+  <link rel="stylesheet" href="codtech2.css" />
+</head>
+<body>
+  <header>
+    <h1>Online Learning Platform</h1>
+    <nav>
+      <button onclick="showSection('video')">Lessons</button>
+      <button onclick="showSection('quiz')">Quiz</button>
+      <button onclick="showSection('progress')">Progress</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="video" class="active-section">
+  <h2>Video Lesson</h2>
+  <div class="video-container">
+    <iframe width="100%" height="400" src="https://www.youtube.com/embed/HcOc7P5BMi4" 
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
+
+    <section id="quiz">
+      <h2>Quick Quiz</h2>
+      <p>Q: What is HTML?</p>
+      <input type="text" placeholder="Your answer..." />
+      <button onclick="submitQuiz()">Submit</button>
+    </section>
+
+    <section id="progress">
+      <h2>Your Progress</h2>
+      <p>Lessons Completed: <span id="lessonCount">0</span></p>
+      <p>Quizzes Passed: <span id="quizScore">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodTech2 Learning</p>
+  </footer>
+
+  <script src="codtech2.js"></script>
+</body>
+</html>
